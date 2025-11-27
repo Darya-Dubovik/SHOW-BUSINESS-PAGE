@@ -20,8 +20,6 @@ body {
 
 .header__container {
   display: flex;
-  /* justify-content: space-between; */
-  /* gap: 200px; */
   align-items: center;
   padding: 15px 24px;
 }
@@ -41,7 +39,7 @@ body {
   padding: 0 79px;
   display: flex;
   gap: 16px;
-  margin-right: 341px;
+  margin-right: 343px;
 }
 
 .menu__link {
@@ -61,4 +59,143 @@ body {
   line-height: 40px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px 80px;
+}
+
+.news-block {
+  display: flex;
+  gap: 40px;
+}
+
+.news-block__main-news {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-block__main-news-image {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.news-block__main-news-title {
+  font-family: "League Gothic", Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  letter-spacing: 1.18px;
+  line-height: 110.5%;
+  margin-bottom: 24px;
+}
+
+.news-block__main-news-text {
+  height: 58px;
+  line-height: 160%;
+  font-size: 18px;
+  letter-spacing: 0.15px;
+}
+
+.news-block__top-stories {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-block__article {
+  max-width: 619px;
+  height: 124px;
+  display: flex;
+  gap: 16px;
+}
+
+.news-block__article:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.news-block__top-stories-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2ad18a;
+  margin-left: 48px;
+  margin-bottom: 18px;
+}
+
+.news-block__top-stories-info {
+  width: 355px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-block__span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e8eaed;
+  color: #2ad18a;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
+
+.news-block__top-stories-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.45px;
+  line-height: 140%;
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
+
+.news-block__top-stories-text {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2ad18a;
+  margin-bottom: 12px;
+}
+
+.news-block__spans {
+  font-size: 16px;
+  font-weight: 500;
+  color: #9da3ae;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.news-block__time {
+  width: 84px;
+  height: 24px;
+  text-align: left;
+  border-right: 1px solid #9da3ae;
+  padding-right: 9px;
+  margin-right: 12px;
+}
+
+.news-block__comments {
+  display: inline-block;
+}
+
+.news-block__comments::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("images/Chat\ icon.png");
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.news-block__top-stories-img {
+  max-width: 200px;
+}
+
+.news-block__top-stories-image {
+  width: 100%;
 }

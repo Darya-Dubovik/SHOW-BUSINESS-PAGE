@@ -21,7 +21,7 @@ body {
 .header__container {
   display: flex;
   align-items: center;
-  padding: 15px 24px;
+  padding: 12.5px 24px;
 }
 
 .logo {
@@ -237,7 +237,7 @@ body {
   font-size: 700;
   height: 62px;
   line-height: 140%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .section__short-news-item-text {
@@ -245,4 +245,23 @@ body {
   height: 58px;
   line-height: 160%;
   letter-spacing: 0.2px;
+}
+
+.footer__container {
+  padding: 80px;
+  border-top: 1px solid #9da3ae;
+}
+
+.footer__link {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__text {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 26px;
 }

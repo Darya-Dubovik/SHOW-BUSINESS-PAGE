@@ -203,3 +203,46 @@ body {
 .news-block__zendaya {
   margin-top: 15.5px;
 }
+
+.section__third-container {
+  padding: 40px 80px 80px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.section__short-news {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.section__short-news-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 290px;
+}
+
+.section__short-news-item-img {
+  max-width: 290px;
+  margin-bottom: 13.5px;
+}
+
+.section__short-news-item-image {
+  width: 100%;
+}
+
+.section__short-news-item-title {
+  font-size: 22px;
+  font-size: 700;
+  height: 62px;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
+.section__short-news-item-text {
+  font-size: 18px;
+  height: 58px;
+  line-height: 160%;
+  letter-spacing: 0.2px;
+}

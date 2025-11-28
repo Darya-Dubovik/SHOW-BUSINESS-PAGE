@@ -147,7 +147,7 @@ body {
 .news-block__top-stories-title {
   font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.45px;
+  letter-spacing: 0.38px;
   line-height: 140%;
   vertical-align: middle;
   margin-bottom: 8px;
@@ -198,4 +198,8 @@ body {
 
 .news-block__top-stories-image {
   width: 100%;
+}
+
+.news-block__zendaya {
+  margin-top: 15.5px;
 }

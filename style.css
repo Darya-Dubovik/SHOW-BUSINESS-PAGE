@@ -107,6 +107,10 @@ body {
 
 .burger-menu-button {
   display: none;
+}
+
+.burger-menu-label {
+  display: none;
   appearance: none;
   width: 30px;
   height: 30px;
@@ -115,11 +119,11 @@ body {
   z-index: 1;
 }
 
-.burger-menu-button:checked {
-  background-image: url(images/Close.png);
+.burger-menu-button:checked + .burger-menu-label {
+  background-image: url("images/Close.png");
 }
 
-.burger-menu-button:checked + .mobile-menu {
+.burger-menu-button:checked + .burger-menu-label + .mobile-menu {
   display: flex;
 }
 
@@ -486,7 +490,7 @@ body {
     display: none;
   }
 
-  .burger-menu-button {
+  .burger-menu-button + .burger-menu-label {
     display: block;
   }
 

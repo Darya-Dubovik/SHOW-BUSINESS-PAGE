@@ -208,6 +208,7 @@ body {
   font-weight: 500;
   line-height: 32px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .news-block__top-stories-title {

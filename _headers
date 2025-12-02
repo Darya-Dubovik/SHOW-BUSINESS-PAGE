@@ -1,0 +1,5 @@
+/SHOW-BUSINESS-PAGE/style.css
+    Cache-Control: max-age=31536000
+
+/images/*
+    Cache-Control: max-age=31536000

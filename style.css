@@ -1,30 +1,31 @@
+.header__container,
+.menu {
+  display: flex;
+  display: flex;
+}
+.footer__link,
+.logo,
+.menu__link,
+.mobile-menu__link {
+  text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 22px;
 }
-
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   color: #000;
   padding-top: 68px;
 }
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
-
-.header__container {
-  display: flex;
-  align-items: center;
-  padding: 15px 24px;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -32,40 +33,31 @@ body {
   width: 100%;
   background-color: #fff;
 }
-
 .header__container {
+  align-items: center;
   position: relative;
-  display: flex;
   align-items: center;
   padding: 12.5px 24px;
 }
-
 .logo {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.09rem;
   text-transform: uppercase;
-  text-decoration: none;
   color: #2ad18a;
   padding: 0 8px;
   margin-right: 220px;
 }
-
 .menu {
   padding: 0 79px;
-  display: flex;
   gap: 16px;
-  margin-right: 343px;
   margin-right: auto;
 }
-
 .menu__link {
-  text-decoration: none;
   color: inherit;
   font-size: 16px;
   margin: 0 8px;
 }
-
 .button-auth {
   width: 89px;
   height: 40px;
@@ -79,12 +71,10 @@ body {
   margin-left: auto;
   cursor: pointer;
 }
-
 .burger-menu-image {
   width: 30px;
   display: none;
 }
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -97,19 +87,14 @@ body {
   width: 30vw;
   margin: 0 auto;
 }
-
 .mobile-menu__link {
-  text-decoration: none;
-  color: inherit;
   font-size: 20px;
   margin-bottom: 14px;
   color: #fff;
 }
-
 .burger-menu-button {
   display: none;
 }
-
 .burger-menu-label {
   display: none;
   appearance: none;
@@ -120,39 +105,33 @@ body {
   z-index: 1;
   cursor: pointer;
 }
-
 .burger-menu-button:checked + .burger-menu-label {
   background-image: url("images/Close.png");
   cursor: pointer;
 }
-
 .burger-menu-button:checked + .burger-menu-label + .mobile-menu {
   display: flex;
 }
-
 .section__container {
   display: flex;
   flex-direction: column;
   gap: 80px;
   padding: 40px 80px;
 }
-
 .news-block {
   display: flex;
   gap: 40px;
 }
-
-.news-block__main-news {
+.news-block__main-news,
+.news-block__top-stories {
   max-width: 620px;
   display: flex;
   flex-direction: column;
 }
-
 .news-block__main-news-image {
   width: 100%;
   margin-bottom: 24px;
 }
-
 .news-block__main-news-title {
   font-family: "League Gothic", Arial, Helvetica, sans-serif;
   font-size: clamp(22px, 5vw, 72px);
@@ -160,31 +139,25 @@ body {
   line-height: 110.5%;
   margin-bottom: 24px;
 }
-
+.footer__link,
+.news-block__span {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
 .news-block__main-news-text {
   min-height: 58px;
   line-height: 160%;
   font-size: 18px;
   letter-spacing: 0.15px;
 }
-
-.news-block__top-stories {
-  max-width: 620px;
-  display: flex;
-  flex-direction: column;
-}
-
 .news-block__article {
   max-width: 619px;
   height: 124px;
   display: flex;
   gap: 16px;
 }
-
 .news-block__article:not(:last-child) {
   margin-bottom: 24px;
 }
-
 .news-block__top-stories-heading {
   font-size: 16px;
   font-weight: 700;
@@ -192,28 +165,28 @@ body {
   margin-left: 48px;
   margin-bottom: 18px;
 }
-
 .news-block__top-stories-info {
   width: 355px;
   height: 124px;
   display: flex;
   flex-direction: column;
 }
-
+.news-block__comments,
+.news-block__spans {
+  display: inline-block;
+}
 .news-block__span {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #e8eaed;
   color: #2ad18a;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 32px;
   text-align: center;
   flex-shrink: 0;
 }
-
 .news-block__top-stories-title {
   font-size: 22px;
   font-weight: 700;
@@ -222,23 +195,19 @@ body {
   vertical-align: middle;
   margin-bottom: 8px;
 }
-
+.news-block__spans,
 .news-block__top-stories-text {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
+}
+.news-block__top-stories-text {
   color: #2ad18a;
   margin-bottom: 12px;
 }
-
 .news-block__spans {
-  font-size: 16px;
-  font-weight: 500;
   color: #9da3ae;
-  text-transform: uppercase;
-  display: inline-block;
 }
-
 .news-block__time {
   width: 84px;
   height: 24px;
@@ -247,11 +216,10 @@ body {
   padding-right: 9px;
   margin-right: 12px;
 }
-
-.news-block__comments {
-  display: inline-block;
+.news-block__top-stories-image,
+.section__short-news-item-image {
+  width: 100%;
 }
-
 .news-block__comments::before {
   content: "";
   display: inline-block;
@@ -261,46 +229,31 @@ body {
   vertical-align: middle;
   margin-right: 5px;
 }
-
 .news-block__top-stories-img {
   max-width: 200px;
 }
-
-.news-block__top-stories-image {
-  width: 100%;
-}
-
 .news-block__zendaya {
   margin-top: 15.5px;
 }
-
 .section__third-container {
-  padding: 40px 80px 80px 80px;
+  padding: 40px 80px 80px;
   display: flex;
   flex-direction: column;
   gap: 39px;
 }
-
 .section__short-news {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
-
 .section__short-news-item {
   display: flex;
   flex-direction: column;
   max-width: calc((100% - 120px) / 4);
 }
-
 .section__short-news-item-img {
   margin-bottom: 13.5px;
 }
-
-.section__short-news-item-image {
-  width: 100%;
-}
-
 .section__short-news-item-title {
   font-size: 22px;
   font-weight: 700;
@@ -308,196 +261,152 @@ body {
   line-height: 140%;
   margin-bottom: 14px;
 }
-
 .section__short-news-item-text {
   font-size: 18px;
   min-height: 58px;
   line-height: 160%;
   letter-spacing: 0.2px;
 }
-
 .footer__container {
   padding: 80px;
   border-top: 1px solid #9da3ae;
 }
-
 .footer__link {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 600;
-  text-decoration: none;
   color: #000;
 }
-
 .footer__text {
   font-size: 18px;
   text-transform: uppercase;
   margin-top: 26px;
 }
-
 @media screen and (max-width: 1420px) {
   .news-block__top-stories-text {
     font-size: 12px;
     margin-bottom: 7px;
   }
-
   .news-block__spans {
     font-size: 12px;
   }
-
   .news-block__time {
     padding-right: 9px;
     margin-right: 12px;
   }
 }
-
 @media screen and (max-width: 1280px) {
   .logo {
     margin-right: auto;
   }
-
   .section__container {
     padding: 35px 60px;
     gap: 70px;
   }
-
   .news-block__top-stories-title {
     font-size: 18px;
     margin-bottom: 6px;
   }
-
   .news-block__span {
     width: 28px;
     height: 28px;
     font-size: 14px;
     line-height: 28px;
   }
-
   .news-block__article {
     gap: 12px;
   }
-
   .news-block__article:not(:last-child) {
     margin-bottom: 18px;
   }
-
   .section__third-container {
-    padding: 35px 60px 70px 60px;
+    padding: 35px 60px 70px;
   }
-
   .section__short-news-item-title {
     font-size: 20px;
   }
-
   .section__short-news-item-text {
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 986px) {
   .section__container {
-    padding: 30px 30px;
+    padding: 30px;
     gap: 60px;
   }
-
   .section__third-container {
     padding: 30px;
   }
-
   .footer__container {
     padding: 50px;
   }
-
   .footer__link {
     font-size: 20px;
   }
-
   .footer__text {
     font-size: 14px;
     margin-top: 22px;
   }
 }
-
 @media screen and (max-width: 878px) {
+  .footer__link,
   .logo {
     font-size: 18px;
   }
-
+  .button-auth,
+  .footer__text,
   .menu__link {
     font-size: 12px;
   }
-
   .button-auth {
     width: 70px;
     height: 30px;
     line-height: 30px;
-    font-size: 12px;
   }
-  .news-block {
+  .news-block,
+  .section__short-news {
     gap: 30px;
   }
-
   .news-block__main-news-image,
   .news-block__main-news-title {
     margin-bottom: 18px;
   }
-
   .news-block__time {
     padding-right: 7px;
     margin-right: 6px;
   }
-
   .news-block__comments::before {
     margin-right: 5px;
   }
-
-  .section__short-news {
-    gap: 30px;
-  }
-
   .section__short-news-item {
     max-width: calc((100% - 90px) / 4);
   }
-
   .section__short-news-item-img {
     margin-bottom: 10px;
   }
-
   .section__short-news-item-title {
     margin-bottom: 5px;
   }
-
-  .footer__link {
-    font-size: 18px;
-  }
-
   .footer__text {
-    font-size: 12px;
     margin-top: 20px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .news-block {
     display: flex;
     flex-direction: column;
     gap: 60px;
   }
-
   .menu {
     padding: 0 40px;
     gap: 4px;
   }
-
-  .menu,
-  .button-auth {
+  .button-auth,
+  .menu {
     display: none;
   }
-
   .burger-menu-button + .burger-menu-label {
     display: block;
   }
-
   .button-auth--mobile {
     display: block;
     width: 95px;
@@ -507,213 +416,165 @@ body {
     color: #2ad18a;
     margin-left: 0;
   }
-
   .news-block__main-news,
   .news-block__top-stories,
   .section__short-news {
     margin: 0 auto;
   }
-
   .section__short-news {
     justify-content: center;
     align-items: center;
   }
-
   .section__short-news-item {
     display: flex;
     flex-direction: column;
     max-width: calc((100% - 60px) / 2);
   }
 }
-
 @media screen and (max-width: 680px) {
   body {
     padding-top: 50px;
   }
-
+  .footer__link,
   .logo {
     font-size: 16px;
   }
-
+  .footer__text,
   .menu__link {
     font-size: 10px;
   }
-
   .news-block__main-news-image {
     margin-bottom: 14px;
   }
-
   .news-block__top-stories-info {
     width: 250px;
   }
-
   .news-block__time {
     padding-right: 5px;
     margin-right: 4px;
   }
-
   .news-block__comments::before {
     margin-right: 3px;
   }
-
   .section__short-news-item-img,
   .section__short-news-item-title {
     margin-bottom: 8px;
   }
-
   .section__container,
   .section__third-container {
     padding: 30px 20px;
   }
-
   .footer__container {
     padding: 30px;
   }
-
-  .footer__link {
-    font-size: 16px;
-  }
-
   .footer__text {
-    font-size: 10px;
     margin-top: 18px;
   }
 }
-
 @media screen and (max-width: 565px) {
-  body {
-    padding-top: 40px;
-  }
-
-  .logo {
-    font-size: 12px;
-  }
-
-  .menu__link {
-    font-size: 8px;
-  }
-
-  .mobile-menu__link {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-
-  .button-auth {
-    width: 65px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 14px;
-  }
-
-  .news-block {
-    gap: 40px;
-  }
-
+  .mobile-menu__link,
   .news-block__main-news-image,
   .news-block__main-news-title {
     margin-bottom: 10px;
   }
-
+  body {
+    padding-top: 40px;
+  }
+  .logo {
+    font-size: 12px;
+  }
+  .menu__link {
+    font-size: 8px;
+  }
+  .mobile-menu__link {
+    font-size: 16px;
+    color: #fff;
+  }
+  .button-auth,
+  .footer__link,
   .news-block__main-news-text {
     font-size: 14px;
   }
-
+  .button-auth {
+    width: 65px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .news-block {
+    gap: 40px;
+  }
   .section__container {
     gap: 40px;
     padding: 20px;
   }
-
   .news-block__top-stories-title {
     font-size: 15px;
   }
-
   .news-block__spans {
     font-size: 10px;
   }
-
   .section__third-container {
     gap: 10px;
     padding: 20px;
   }
-
   .section__short-news-item-img {
     margin-bottom: 6px;
   }
-
   .section__short-news-item-title {
     font-size: 12px;
     margin-bottom: 6px;
     min-height: 31px;
   }
-
   .section__short-news-item-text {
     font-size: 10px;
     min-height: 29px;
   }
-
-  .footer__link {
-    font-size: 14px;
-  }
-
   .footer__text {
     font-size: 8px;
     margin-top: 16px;
   }
 }
-
 @media screen and (max-width: 490px) {
   .logo {
     font-size: 10px;
   }
-
   .menu__link {
     font-size: 6px;
   }
 }
-
 @media screen and (max-width: 440px) {
   .mobile-menu__link {
     font-size: 13px;
   }
-
   .button-auth {
     width: 55px;
     height: 30px;
     line-height: 30px;
     font-size: 12px;
   }
-
   .section__short-news {
     gap: 15px;
   }
-
   .section__short-news-item {
     max-width: calc((100% - 15px) / 2);
   }
 }
-
 @media screen and (max-width: 400px) {
   .menu {
     padding: 0 10px;
   }
-
   .section__short-news-item-title {
     min-height: 45px;
   }
-
   .section__short-news-item-text {
     min-height: 58px;
   }
-
   .footer__container {
     padding: 15px;
   }
-
   .footer__link {
     font-size: 14px;
   }
-
   .footer__text {
     font-size: 8px;
     margin-top: 16px;

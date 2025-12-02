@@ -4,5 +4,3 @@
 /images/*
   Cache-Control: max-age=31536000
 
-/index.html
-  Cache-Control: no-cache

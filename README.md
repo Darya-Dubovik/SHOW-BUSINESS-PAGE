@@ -20,8 +20,8 @@ https://darya-dubovik.github.io/SHOW-BUSINESS-PAGE/
 
 ```SHOW BUSINESS PAGE/
 ├── images/            - изображения для новостей и иконки
-├── node_modules/      - установленные зависимости npm
 ├── _headers           - служебный файл Netlify, позволяющий задавать HTTP-заголовки (например, кэширование)
+├── .gitignore         - файл, содержащий намеренно неотслеживаемые файлы и каталоги, игнорируемые Git
 ├── index.html         - основная HTML-страница
 ├── package-lock.json  - зафиксированные версии всех установленных пакетов, читаемые npm
 ├── package.json       - настройки npm
@@ -33,4 +33,3 @@ https://darya-dubovik.github.io/SHOW-BUSINESS-PAGE/
 - HTML5 (применение семантических тегов) - разметка веб-страницы
 - CSS3 (методология BEM, Flexbox, Pixel Perfect) - вёрстка и стилизация
 - Media Queries (в том числе 'mobile first') - полная адаптивность веб-страницы
-- Prettier - форматирование кода
